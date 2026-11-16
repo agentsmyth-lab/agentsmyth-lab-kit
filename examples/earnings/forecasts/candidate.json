@@ -1,0 +1,81 @@
+{
+  "system": "Candidate",
+  "description": "Synthetic forecasts for the system being evaluated.",
+  "forecasts": [
+    {
+      "event_id": "E-01",
+      "status": "scored",
+      "score": 62,
+      "saved_at": "2026-10-13T22:00:00-04:00"
+    },
+    {
+      "event_id": "E-02",
+      "status": "scored",
+      "score": 38,
+      "saved_at": "2026-10-14T15:30:00-04:00"
+    },
+    {
+      "event_id": "E-03",
+      "status": "scored",
+      "score": 41,
+      "saved_at": "2026-10-15T15:30:00-04:00"
+    },
+    {
+      "event_id": "E-04",
+      "status": "scored",
+      "score": 57,
+      "saved_at": "2026-10-19T22:00:00-04:00"
+    },
+    {
+      "event_id": "E-05",
+      "status": "scored",
+      "score": 55,
+      "saved_at": "2026-10-20T15:30:00-04:00",
+      "note": "exactly at the bullish boundary"
+    },
+    {
+      "event_id": "E-06",
+      "status": "scored",
+      "score": 46,
+      "saved_at": "2026-10-21T22:00:00-04:00",
+      "note": "just inside the neutral range"
+    },
+    {
+      "event_id": "E-07",
+      "status": "scored",
+      "score": 60,
+      "saved_at": "2026-10-22T15:30:00-04:00"
+    },
+    {
+      "event_id": "E-08",
+      "status": "scored",
+      "score": 50,
+      "saved_at": "2026-10-26T22:00:00-04:00",
+      "note": "exactly 50 abstains at every width"
+    },
+    {
+      "event_id": "E-09",
+      "status": "scored",
+      "score": 65,
+      "saved_at": "2026-10-28T10:05:00-04:00",
+      "note": "saved after the release went out"
+    },
+    {
+      "event_id": "E-10",
+      "status": "scored",
+      "score": 58,
+      "saved_at": "2026-10-28T22:00:00-04:00"
+    },
+    {
+      "event_id": "E-11",
+      "status": "missing",
+      "note": "the run failed; no forecast was saved"
+    },
+    {
+      "event_id": "E-12",
+      "status": "scored",
+      "score": 61,
+      "saved_at": "2026-12-02T22:00:00-05:00"
+    }
+  ]
+}

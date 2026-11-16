@@ -1,0 +1,80 @@
+{
+  "system": "Baseline",
+  "description": "Synthetic forecasts for the comparison system.",
+  "forecasts": [
+    {
+      "event_id": "E-01",
+      "status": "scored",
+      "score": 58,
+      "saved_at": "2026-10-13T22:00:00-04:00"
+    },
+    {
+      "event_id": "E-02",
+      "status": "scored",
+      "score": 52,
+      "saved_at": "2026-10-14T15:30:00-04:00"
+    },
+    {
+      "event_id": "E-03",
+      "status": "scored",
+      "score": 60,
+      "saved_at": "2026-10-15T15:30:00-04:00"
+    },
+    {
+      "event_id": "E-04",
+      "status": "scored",
+      "score": 66,
+      "saved_at": "2026-10-19T22:00:00-04:00"
+    },
+    {
+      "event_id": "E-05",
+      "status": "scored",
+      "score": 45,
+      "saved_at": "2026-10-20T15:30:00-04:00",
+      "note": "exactly at the bearish boundary"
+    },
+    {
+      "event_id": "E-06",
+      "status": "scored",
+      "score": 54,
+      "saved_at": "2026-10-21T22:00:00-04:00",
+      "note": "just inside the neutral range"
+    },
+    {
+      "event_id": "E-07",
+      "status": "scored",
+      "score": 40,
+      "saved_at": "2026-10-22T15:30:00-04:00"
+    },
+    {
+      "event_id": "E-08",
+      "status": "scored",
+      "score": 70,
+      "saved_at": "2026-10-26T22:00:00-04:00"
+    },
+    {
+      "event_id": "E-09",
+      "status": "scored",
+      "score": 35,
+      "saved_at": "2026-10-27T15:30:00-04:00"
+    },
+    {
+      "event_id": "E-10",
+      "status": "scored",
+      "score": 44,
+      "saved_at": "2026-10-28T22:00:00-04:00"
+    },
+    {
+      "event_id": "E-11",
+      "status": "scored",
+      "score": 48,
+      "saved_at": "2026-10-29T15:30:00-04:00"
+    },
+    {
+      "event_id": "E-12",
+      "status": "scored",
+      "score": 39,
+      "saved_at": "2026-12-02T22:00:00-05:00"
+    }
+  ]
+}

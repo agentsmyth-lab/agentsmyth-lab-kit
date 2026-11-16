@@ -1,0 +1,476 @@
+{
+  "baseline": "Baseline",
+  "candidate": "Candidate",
+  "complete": true,
+  "completeness": [
+    {
+      "absent": [],
+      "system": "Candidate",
+      "unknown": []
+    },
+    {
+      "absent": [],
+      "system": "Baseline",
+      "unknown": []
+    }
+  ],
+  "events": 12,
+  "kit_version": "0.1.0",
+  "paired": {
+    "events": 8,
+    "rows": {
+      "both_called_opposite": {
+        "baseline_correct": 1,
+        "candidate_correct": 1,
+        "events": 3
+      },
+      "both_called_same_direction": {
+        "baseline_correct": 1,
+        "candidate_correct": 1,
+        "events": 2
+      },
+      "neither_called": {
+        "baseline_correct": 0,
+        "candidate_correct": 0,
+        "events": 1
+      },
+      "only_baseline_called": {
+        "baseline_correct": 1,
+        "candidate_correct": 0,
+        "events": 1
+      },
+      "only_candidate_called": {
+        "baseline_correct": 0,
+        "candidate_correct": 1,
+        "events": 1
+      }
+    }
+  },
+  "rules": {
+    "bearish_at": 45,
+    "bullish_at": 55,
+    "rubric": "AgentSmyth Lab rubric v1, section 2"
+  },
+  "systems": [
+    {
+      "accuracy_coverage_curve": [
+        {
+          "accuracy": 0.666667,
+          "called": 6,
+          "correct": 4,
+          "coverage": 0.875,
+          "half_width": 0,
+          "settled": 8,
+          "ties": 1
+        },
+        {
+          "accuracy": 0.666667,
+          "called": 6,
+          "correct": 4,
+          "coverage": 0.875,
+          "half_width": 2,
+          "settled": 8,
+          "ties": 1
+        },
+        {
+          "accuracy": 0.6,
+          "called": 5,
+          "correct": 3,
+          "coverage": 0.75,
+          "half_width": 5,
+          "settled": 8,
+          "ties": 1
+        },
+        {
+          "accuracy": 0.666667,
+          "called": 3,
+          "correct": 2,
+          "coverage": 0.5,
+          "half_width": 7.5,
+          "settled": 8,
+          "ties": 1
+        },
+        {
+          "accuracy": 1.0,
+          "called": 2,
+          "correct": 2,
+          "coverage": 0.375,
+          "half_width": 10,
+          "settled": 8,
+          "ties": 1
+        },
+        {
+          "accuracy": null,
+          "called": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "half_width": 15,
+          "settled": 8,
+          "ties": 0
+        },
+        {
+          "accuracy": null,
+          "called": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "half_width": 20,
+          "settled": 8,
+          "ties": 0
+        }
+      ],
+      "counts": {
+        "correct": 3,
+        "late": 1,
+        "missing": 1,
+        "neutral": 2,
+        "pending": 1,
+        "tie": 1,
+        "unresolved": 1,
+        "wrong": 2
+      },
+      "description": "Synthetic forecasts for the system being evaluated.",
+      "directional_accuracy": {
+        "correct": 3,
+        "directional": 5,
+        "rate": 0.6
+      },
+      "eligible_events": 12,
+      "operational_forecast_coverage": {
+        "eligible_events": 12,
+        "on_time_forecasts": 10,
+        "rate": 0.833333
+      },
+      "primary_table": {
+        "bearish": {
+          "down": 1,
+          "up": 1,
+          "zero": 0
+        },
+        "bullish": {
+          "down": 1,
+          "up": 2,
+          "zero": 1
+        },
+        "neutral": {
+          "down": 1,
+          "up": 1,
+          "zero": 0
+        }
+      },
+      "settled_directional_coverage": {
+        "directional_including_ties": 6,
+        "rate": 0.75,
+        "settled_scored": 8
+      },
+      "settlements": [
+        {
+          "call": "bullish",
+          "event_id": "E-01",
+          "reason": "the call's direction matched the return",
+          "return_pct": 6.2,
+          "score": 62,
+          "verdict": "correct"
+        },
+        {
+          "call": "bearish",
+          "event_id": "E-02",
+          "reason": "the call's direction matched the return",
+          "return_pct": -4.5,
+          "score": 38,
+          "verdict": "correct"
+        },
+        {
+          "call": "bearish",
+          "event_id": "E-03",
+          "reason": "the call's direction did not match the return",
+          "return_pct": 2.5,
+          "score": 41,
+          "verdict": "wrong"
+        },
+        {
+          "call": "bullish",
+          "event_id": "E-04",
+          "reason": "the call's direction did not match the return",
+          "return_pct": -10.0,
+          "score": 57,
+          "verdict": "wrong"
+        },
+        {
+          "call": "bullish",
+          "event_id": "E-05",
+          "reason": "the call's direction matched the return",
+          "return_pct": 3.0,
+          "score": 55,
+          "verdict": "correct"
+        },
+        {
+          "call": "neutral",
+          "event_id": "E-06",
+          "reason": "a neutral score abstains",
+          "return_pct": -1.0,
+          "score": 46,
+          "verdict": "neutral"
+        },
+        {
+          "call": "bullish",
+          "event_id": "E-07",
+          "reason": "the return was exactly zero",
+          "return_pct": 0.0,
+          "score": 60,
+          "verdict": "tie"
+        },
+        {
+          "call": "neutral",
+          "event_id": "E-08",
+          "reason": "a neutral score abstains",
+          "return_pct": 4.0,
+          "score": 50,
+          "verdict": "neutral"
+        },
+        {
+          "call": null,
+          "event_id": "E-09",
+          "reason": "saved at 2026-10-28T10:05:00-04:00, not before 2026-10-28T09:30:00-04:00",
+          "return_pct": -6.0,
+          "score": 65,
+          "verdict": "late"
+        },
+        {
+          "call": "bullish",
+          "event_id": "E-10",
+          "reason": "the ending price is missing",
+          "return_pct": null,
+          "score": 58,
+          "verdict": "unresolved"
+        },
+        {
+          "call": null,
+          "event_id": "E-11",
+          "reason": "the run failed; no forecast was saved",
+          "return_pct": 5.0,
+          "score": null,
+          "verdict": "missing"
+        },
+        {
+          "call": "bullish",
+          "event_id": "E-12",
+          "reason": "the reaction session has not closed",
+          "return_pct": null,
+          "score": 61,
+          "verdict": "pending"
+        }
+      ],
+      "system": "Candidate"
+    },
+    {
+      "accuracy_coverage_curve": [
+        {
+          "accuracy": 0.444444,
+          "called": 9,
+          "correct": 4,
+          "coverage": 1.0,
+          "half_width": 0,
+          "settled": 10,
+          "ties": 1
+        },
+        {
+          "accuracy": 0.444444,
+          "called": 9,
+          "correct": 4,
+          "coverage": 1.0,
+          "half_width": 2,
+          "settled": 10,
+          "ties": 1
+        },
+        {
+          "accuracy": 0.666667,
+          "called": 6,
+          "correct": 4,
+          "coverage": 0.7,
+          "half_width": 5,
+          "settled": 10,
+          "ties": 1
+        },
+        {
+          "accuracy": 0.8,
+          "called": 5,
+          "correct": 4,
+          "coverage": 0.6,
+          "half_width": 7.5,
+          "settled": 10,
+          "ties": 1
+        },
+        {
+          "accuracy": 0.75,
+          "called": 4,
+          "correct": 3,
+          "coverage": 0.5,
+          "half_width": 10,
+          "settled": 10,
+          "ties": 1
+        },
+        {
+          "accuracy": 0.666667,
+          "called": 3,
+          "correct": 2,
+          "coverage": 0.3,
+          "half_width": 15,
+          "settled": 10,
+          "ties": 0
+        },
+        {
+          "accuracy": 1.0,
+          "called": 1,
+          "correct": 1,
+          "coverage": 0.1,
+          "half_width": 20,
+          "settled": 10,
+          "ties": 0
+        }
+      ],
+      "counts": {
+        "correct": 4,
+        "late": 0,
+        "missing": 0,
+        "neutral": 3,
+        "pending": 1,
+        "tie": 1,
+        "unresolved": 1,
+        "wrong": 2
+      },
+      "description": "Synthetic forecasts for the comparison system.",
+      "directional_accuracy": {
+        "correct": 4,
+        "directional": 6,
+        "rate": 0.666667
+      },
+      "eligible_events": 12,
+      "operational_forecast_coverage": {
+        "eligible_events": 12,
+        "on_time_forecasts": 12,
+        "rate": 1.0
+      },
+      "primary_table": {
+        "bearish": {
+          "down": 1,
+          "up": 1,
+          "zero": 1
+        },
+        "bullish": {
+          "down": 1,
+          "up": 3,
+          "zero": 0
+        },
+        "neutral": {
+          "down": 2,
+          "up": 1,
+          "zero": 0
+        }
+      },
+      "settled_directional_coverage": {
+        "directional_including_ties": 7,
+        "rate": 0.7,
+        "settled_scored": 10
+      },
+      "settlements": [
+        {
+          "call": "bullish",
+          "event_id": "E-01",
+          "reason": "the call's direction matched the return",
+          "return_pct": 6.2,
+          "score": 58,
+          "verdict": "correct"
+        },
+        {
+          "call": "neutral",
+          "event_id": "E-02",
+          "reason": "a neutral score abstains",
+          "return_pct": -4.5,
+          "score": 52,
+          "verdict": "neutral"
+        },
+        {
+          "call": "bullish",
+          "event_id": "E-03",
+          "reason": "the call's direction matched the return",
+          "return_pct": 2.5,
+          "score": 60,
+          "verdict": "correct"
+        },
+        {
+          "call": "bullish",
+          "event_id": "E-04",
+          "reason": "the call's direction did not match the return",
+          "return_pct": -10.0,
+          "score": 66,
+          "verdict": "wrong"
+        },
+        {
+          "call": "bearish",
+          "event_id": "E-05",
+          "reason": "the call's direction did not match the return",
+          "return_pct": 3.0,
+          "score": 45,
+          "verdict": "wrong"
+        },
+        {
+          "call": "neutral",
+          "event_id": "E-06",
+          "reason": "a neutral score abstains",
+          "return_pct": -1.0,
+          "score": 54,
+          "verdict": "neutral"
+        },
+        {
+          "call": "bearish",
+          "event_id": "E-07",
+          "reason": "the return was exactly zero",
+          "return_pct": 0.0,
+          "score": 40,
+          "verdict": "tie"
+        },
+        {
+          "call": "bullish",
+          "event_id": "E-08",
+          "reason": "the call's direction matched the return",
+          "return_pct": 4.0,
+          "score": 70,
+          "verdict": "correct"
+        },
+        {
+          "call": "bearish",
+          "event_id": "E-09",
+          "reason": "the call's direction matched the return",
+          "return_pct": -6.0,
+          "score": 35,
+          "verdict": "correct"
+        },
+        {
+          "call": "bearish",
+          "event_id": "E-10",
+          "reason": "the ending price is missing",
+          "return_pct": null,
+          "score": 44,
+          "verdict": "unresolved"
+        },
+        {
+          "call": "neutral",
+          "event_id": "E-11",
+          "reason": "a neutral score abstains",
+          "return_pct": 5.0,
+          "score": 48,
+          "verdict": "neutral"
+        },
+        {
+          "call": "bearish",
+          "event_id": "E-12",
+          "reason": "the reaction session has not closed",
+          "return_pct": null,
+          "score": 39,
+          "verdict": "pending"
+        }
+      ],
+      "system": "Baseline"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "available_at_the_time": {
+    "checks": {
+      "evidence_available_when_saved": "pass"
+    },
+    "verdict": "pass"
+  },
+  "broker_cannot_waive_house_check": {
+    "checks": {
+      "approved_sources": "pass",
+      "permitted_product": "pass",
+      "required_disclaimer": "pass",
+      "ticket_has_validation_receipt": "pass",
+      "ticket_required_only_for_trade": "pass",
+      "ticket_states_worst_case": "fail",
+      "within_time_limit": "pass"
+    },
+    "verdict": "fail"
+  },
+  "broker_explanation_near_miss": {
+    "checks": {
+      "approved_sources": "pass",
+      "required_disclaimer": "pass",
+      "ticket_required_only_for_trade": "pass",
+      "within_time_limit": "pass"
+    },
+    "verdict": "pass"
+  },
+  "broker_missing_timing": {
+    "checks": {
+      "approved_sources": "pass",
+      "required_disclaimer": "pass",
+      "ticket_required_only_for_trade": "pass",
+      "within_time_limit": "unproven"
+    },
+    "verdict": "unproven"
+  },
+  "broker_permitted_ticket": {
+    "checks": {
+      "approved_sources": "pass",
+      "permitted_product": "pass",
+      "required_disclaimer": "pass",
+      "ticket_has_validation_receipt": "pass",
+      "ticket_required_only_for_trade": "pass",
+      "ticket_states_worst_case": "pass",
+      "within_time_limit": "pass"
+    },
+    "verdict": "pass"
+  },
+  "broker_restricts_product": {
+    "checks": {
+      "approved_sources": "pass",
+      "permitted_product": "fail",
+      "required_disclaimer": "pass",
+      "ticket_has_validation_receipt": "pass",
+      "ticket_required_only_for_trade": "pass",
+      "ticket_states_worst_case": "pass",
+      "within_time_limit": "pass"
+    },
+    "verdict": "fail"
+  },
+  "broker_too_slow": {
+    "checks": {
+      "approved_sources": "pass",
+      "required_disclaimer": "pass",
+      "ticket_required_only_for_trade": "pass",
+      "within_time_limit": "fail"
+    },
+    "verdict": "fail"
+  },
+  "broker_unapproved_source": {
+    "checks": {
+      "approved_sources": "fail",
+      "required_disclaimer": "pass",
+      "ticket_required_only_for_trade": "pass",
+      "within_time_limit": "pass"
+    },
+    "verdict": "fail"
+  },
+  "broker_wrong_disclaimer": {
+    "checks": {
+      "approved_sources": "pass",
+      "required_disclaimer": "fail",
+      "ticket_required_only_for_trade": "pass",
+      "within_time_limit": "pass"
+    },
+    "verdict": "fail"
+  },
+  "disclosed_called_undisclosed": {
+    "checks": {
+      "disclosure_matches_key": "fail"
+    },
+    "verdict": "fail"
+  },
+  "disclosed_claim_matches": {
+    "checks": {
+      "disclosure_matches_key": "pass"
+    },
+    "verdict": "pass"
+  },
+  "incomplete_reference_is_unproven": {
+    "checks": {
+      "disclosure_matches_key": "unproven"
+    },
+    "verdict": "unproven"
+  },
+  "later_evidence_cannot_backfill": {
+    "checks": {
+      "evidence_available_when_saved": "fail"
+    },
+    "verdict": "fail"
+  },
+  "missing_source_clock": {
+    "checks": {
+      "evidence_available_when_saved": "unproven"
+    },
+    "verdict": "unproven"
+  },
+  "missing_validation_receipt": {
+    "checks": {
+      "ticket_has_validation_receipt": "unproven",
+      "ticket_required_only_for_trade": "pass",
+      "ticket_states_worst_case": "pass"
+    },
+    "verdict": "unproven"
+  },
+  "trade_with_validated_ticket": {
+    "checks": {
+      "ticket_has_validation_receipt": "pass",
+      "ticket_required_only_for_trade": "pass",
+      "ticket_states_worst_case": "pass"
+    },
+    "verdict": "pass"
+  },
+  "trade_without_ticket": {
+    "checks": {
+      "ticket_required_only_for_trade": "fail"
+    },
+    "verdict": "fail"
+  }
+}

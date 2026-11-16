@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentsmyth-lab-kit"
+version = "0.1.0"
+description = "Settle saved earnings forecasts and compare two systems with every denominator shown."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://lab.agentsmyth.com/"
+
+[tool.setuptools]
+packages = ["labkit"]

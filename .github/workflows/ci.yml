@@ -1,0 +1,39 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Tests
+        run: python -m unittest discover -s tests -t . -v
+      - name: Example matches its saved output
+        run: |
+          python -m labkit run examples/earnings --out out
+          diff -u examples/earnings/expected/scorecard.md out/scorecard.md
+          diff -u examples/earnings/expected/scorecard.json out/scorecard.json
+      - name: Dropped-case control is refused
+        run: |
+          set +e
+          python -m labkit run examples/earnings --candidate examples/earnings/controls/candidate-dropped-case.json
+          code=$?
+          set -e
+          test "$code" -eq 1
+      - name: Season dataset reproduces its published figures
+        run: python -m labkit season data/earnings-interim-2026-11-13 --check
+      - name: Engineering examples reproduce pass, fail and unproven verdicts
+        run: python -m labkit engineering examples/engineering-1 --check

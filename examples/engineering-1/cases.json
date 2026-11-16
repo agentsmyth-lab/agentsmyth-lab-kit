@@ -1,0 +1,70 @@
+[
+  {
+    "id": "available_at_the_time", "kind": "evidence_clock",
+    "saved_at": "2026-01-05T15:00:00+00:00", "source_available_at": "2026-01-05T14:55:00+00:00"
+  },
+  {
+    "id": "later_evidence_cannot_backfill", "kind": "evidence_clock",
+    "saved_at": "2026-01-05T15:00:00+00:00", "source_available_at": "2026-01-05T16:00:00+00:00"
+  },
+  {
+    "id": "missing_source_clock", "kind": "evidence_clock",
+    "saved_at": "2026-01-05T15:00:00+00:00", "source_available_at": null
+  },
+  {
+    "id": "disclosed_claim_matches", "kind": "disclosure", "claim_disclosed": true, "key_disclosed": true
+  },
+  {
+    "id": "disclosed_called_undisclosed", "kind": "disclosure", "claim_disclosed": false, "key_disclosed": true
+  },
+  {
+    "id": "incomplete_reference_is_unproven", "kind": "disclosure", "claim_disclosed": true, "key_disclosed": null
+  },
+  {
+    "id": "trade_with_validated_ticket", "kind": "ticket", "intent": "trade",
+    "ticket": {"product": "cash_equity", "validated": true, "worst_case_stated": true}
+  },
+  {
+    "id": "trade_without_ticket", "kind": "ticket", "intent": "trade", "ticket": null
+  },
+  {
+    "id": "missing_validation_receipt", "kind": "ticket", "intent": "trade",
+    "ticket": {"product": "cash_equity", "validated": null, "worst_case_stated": true}
+  },
+  {
+    "id": "broker_permitted_ticket", "kind": "ticket", "intent": "trade", "profile": "fictional_broker_v1",
+    "ticket": {"product": "cash_equity", "validated": true, "worst_case_stated": true},
+    "sources": ["public_filing"], "disclaimer_id": "fictional_disclaimer_v1", "elapsed_ms": 25000
+  },
+  {
+    "id": "broker_restricts_product", "kind": "ticket", "intent": "trade", "profile": "fictional_broker_v1",
+    "ticket": {"product": "restricted_product", "validated": true, "worst_case_stated": true},
+    "sources": ["public_filing"], "disclaimer_id": "fictional_disclaimer_v1", "elapsed_ms": 12000
+  },
+  {
+    "id": "broker_explanation_near_miss", "kind": "ticket", "intent": "explain", "profile": "fictional_broker_v1",
+    "subject": "restricted_product", "ticket": null,
+    "sources": ["approved_news"], "disclaimer_id": "fictional_disclaimer_v1", "elapsed_ms": 12000
+  },
+  {
+    "id": "broker_cannot_waive_house_check", "kind": "ticket", "intent": "trade", "profile": "fictional_broker_v1",
+    "ticket": {"product": "cash_equity", "validated": true, "worst_case_stated": false},
+    "sources": ["public_filing"], "disclaimer_id": "fictional_disclaimer_v1", "elapsed_ms": 12000
+  },
+  {
+    "id": "broker_missing_timing", "kind": "ticket", "intent": "explain", "profile": "fictional_broker_v1",
+    "ticket": null, "sources": ["approved_news"], "disclaimer_id": "fictional_disclaimer_v1", "elapsed_ms": null
+  },
+  {
+    "id": "broker_unapproved_source", "kind": "ticket", "intent": "explain", "profile": "fictional_broker_v1",
+    "ticket": null, "sources": ["unapproved_news"], "disclaimer_id": "fictional_disclaimer_v1", "elapsed_ms": 12000
+  },
+  {
+    "id": "broker_wrong_disclaimer", "kind": "ticket", "intent": "explain", "profile": "fictional_broker_v1",
+    "ticket": null, "sources": ["approved_news"], "disclaimer_id": "wrong_disclaimer", "elapsed_ms": 12000
+  },
+  {
+    "id": "broker_too_slow", "kind": "ticket", "intent": "explain", "profile": "fictional_broker_v1",
+    "ticket": null, "sources": ["approved_news"], "disclaimer_id": "fictional_disclaimer_v1", "elapsed_ms": 25001
+  }
+]

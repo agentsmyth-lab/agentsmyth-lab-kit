@@ -1,0 +1,7 @@
+{
+  "id": "fictional_broker_v1",
+  "approved_sources": ["public_filing", "approved_news"],
+  "allowed_products": ["cash_equity"],
+  "disclaimer_id": "fictional_disclaimer_v1",
+  "max_elapsed_ms": 25000
+}
